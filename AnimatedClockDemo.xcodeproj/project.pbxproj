@@ -12,6 +12,7 @@
 		2D62023723320B12002D3C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D62023523320B12002D3C77 /* Main.storyboard */; };
 		2D62023923320B13002D3C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D62023823320B13002D3C77 /* Assets.xcassets */; };
 		2D62023C23320B13002D3C77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D62023A23320B13002D3C77 /* LaunchScreen.storyboard */; };
+		A185EEEFF2DD3E3CCBC2D5EE /* Pods_AnimatedClockDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411FAA8B3D407933386CABFF /* Pods_AnimatedClockDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		003291375DEA50A3CDA1B455 /* Pods-AnimatedClockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedClockDemo.release.xcconfig"; path = "Target Support Files/Pods-AnimatedClockDemo/Pods-AnimatedClockDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2D62022E23320B12002D3C77 /* AnimatedClockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedClockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D62023123320B12002D3C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D62023323320B12002D3C77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,8 @@
 		2D62023823320B13002D3C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D62023B23320B13002D3C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D62023D23320B13002D3C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4240C903666AA94D545EDC /* Pods-AnimatedClockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedClockDemo.debug.xcconfig"; path = "Target Support Files/Pods-AnimatedClockDemo/Pods-AnimatedClockDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		411FAA8B3D407933386CABFF /* Pods_AnimatedClockDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedClockDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +46,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A185EEEFF2DD3E3CCBC2D5EE /* Pods_AnimatedClockDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03E59926E3F30DD7E6E0ACA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4240C903666AA94D545EDC /* Pods-AnimatedClockDemo.debug.xcconfig */,
+				003291375DEA50A3CDA1B455 /* Pods-AnimatedClockDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2D62022523320B12002D3C77 = {
 			isa = PBXGroup;
 			children = (
 				2D62023023320B12002D3C77 /* AnimatedClockDemo */,
 				2D62022F23320B12002D3C77 /* Products */,
+				03E59926E3F30DD7E6E0ACA3 /* Pods */,
+				8873656F45B3F3B6F6F70934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +94,14 @@
 			path = AnimatedClockDemo;
 			sourceTree = "<group>";
 		};
+		8873656F45B3F3B6F6F70934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				411FAA8B3D407933386CABFF /* Pods_AnimatedClockDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,10 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D62024023320B13002D3C77 /* Build configuration list for PBXNativeTarget "AnimatedClockDemo" */;
 			buildPhases = (
+				C8B3A3E4F837FB53914F48B0 /* [CP] Check Pods Manifest.lock */,
 				2D62022A23320B12002D3C77 /* Sources */,
 				2D62022B23320B12002D3C77 /* Frameworks */,
 				2D62022C23320B12002D3C77 /* Resources */,
 				2D66C1032332DAE7001C8410 /* Embed Frameworks */,
+				A2FC47F8BFEA9CC2B45E68E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2FC47F8BFEA9CC2B45E68E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimatedClockDemo/Pods-AnimatedClockDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimatedClockDemo/Pods-AnimatedClockDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimatedClockDemo/Pods-AnimatedClockDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B3A3E4F837FB53914F48B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimatedClockDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D62022A23320B12002D3C77 /* Sources */ = {
@@ -294,6 +363,7 @@
 		};
 		2D62024123320B13002D3C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4240C903666AA94D545EDC /* Pods-AnimatedClockDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -312,6 +382,7 @@
 		};
 		2D62024223320B13002D3C77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003291375DEA50A3CDA1B455 /* Pods-AnimatedClockDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

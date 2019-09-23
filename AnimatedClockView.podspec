@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
   s.name         = "AnimatedClockView"
-  s.version      = "1.0"
+  s.version      = "1.0.0"
   s.summary      = "Simple Clock View For Showing Waiting Of A Process."
   s.description  = "You Can Show Waiting Of A Process With AnimatedClockView(ACV), This Framework Is Very Flexible And Responsivable To Use."
   s.homepage     = "https://github.com/TalebRafiepour/AnimatedClockView-iOS.git"

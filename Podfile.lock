@@ -1,0 +1,16 @@
+PODS:
+  - AnimatedClockView (1.0.0)
+
+DEPENDENCIES:
+  - AnimatedClockView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AnimatedClockView
+
+SPEC CHECKSUMS:
+  AnimatedClockView: 73ba00b48b379e0c67b7e8206b4b20901b87940d
+
+PODFILE CHECKSUM: f8e00b785a16318f8e0647c3a96e751aec1f660c
+
+COCOAPODS: 1.7.5

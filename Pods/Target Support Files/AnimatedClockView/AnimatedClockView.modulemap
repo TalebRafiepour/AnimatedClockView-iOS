@@ -1,0 +1,6 @@
+framework module AnimatedClockView {
+  umbrella header "AnimatedClockView-umbrella.h"
+
+  export *
+  module * { export * }
+}
